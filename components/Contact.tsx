@@ -3,19 +3,18 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
-// Replace these placeholder URLs with Nathan's real social profiles.
 const links = [
   {
     label: "TikTok",
-    href: "https://www.tiktok.com",
+    href: "https://www.tiktok.com/@nathan_fang",
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com",
+    href: "https://www.instagram.com/nathan_fang_/",
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com",
+    href: "https://www.linkedin.com/in/nathan-j-fang/",
   },
 ];
 

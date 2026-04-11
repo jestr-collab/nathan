@@ -35,11 +35,11 @@ export function Hero() {
               Nathan Fang
             </h1>
             <p className="mt-6 max-w-2xl text-xl leading-relaxed text-muted sm:text-2xl">
-              Growth engineer. Content creator. 350K followers and counting.
+              Creator manager scaling accounts through content systems.
             </p>
             <p className="mt-8 max-w-2xl text-base leading-8 text-muted sm:text-lg">
-              I&apos;m a UCSD biology grad (3.6 GPA) who stumbled into growth
-              and never looked back. I&apos;ve built creator networks driving
+              I&apos;m a UCSD biology grad who stumbled into growth and never
+              looked back. I&apos;ve built creator networks driving
               196M organic views, grown my own channels to 350K followers, and
               partnered with brands like Hulu, Amazon, and Maruchan. I&apos;m
               drawn to the intersection of content, distribution, and what
@@ -48,7 +48,9 @@ export function Hero() {
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
               <a
-                href="mailto:nathanjfang3@gmail.com"
+                href="https://www.linkedin.com/in/nathan-j-fang/"
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex w-fit items-center gap-2 rounded-full border border-foreground bg-foreground px-5 py-3 text-sm font-medium text-background hover:border-accent hover:bg-accent"
               >
                 Get in touch <ArrowUpRight className="h-4 w-4" />
@@ -66,7 +68,11 @@ export function Hero() {
             <div className="grid gap-6 sm:grid-cols-3 lg:grid-cols-1">
               <Metric label="Creator networks" value="196M" detail="organic views" />
               <Metric label="Audience" value="350K" detail="followers built" />
-              <Metric label="Brand work" value="3+" detail="major partners" />
+              <Metric
+                label="Brand work"
+                value="15+"
+                detail="Hulu, Amazon, Maruchan and more"
+              />
             </div>
           </div>
         </div>

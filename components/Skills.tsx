@@ -6,20 +6,46 @@ const skillColumns = [
   {
     title: "Growth & Marketing",
     items: [
-      "UGC Strategy",
-      "Creator Management",
-      "Short-Form Content",
-      "Conversion Demos",
-      "Brand Partnerships",
+      {
+        label: "UGC Strategy",
+        href: "https://www.instagram.com/p/DR36h4YCJVN/",
+      },
+      {
+        label: "Creator Management",
+        href: "https://www.instagram.com/emmastudiesstuff",
+      },
+      {
+        label: "Short-Form Content",
+        href: "https://www.instagram.com/p/DKNYWtXS5XC/",
+      },
+      {
+        label: "Conversion Demos",
+        href: "https://www.instagram.com/reel/DW5GFpPEfJf/",
+      },
+      {
+        label: "Brand Partnerships",
+        href: "https://www.instagram.com/p/C12jgOsS1UI/",
+      },
     ],
   },
   {
     title: "Outside Work",
     items: [
-      "Mountain Biking",
-      "Fingerstyle Guitar",
-      "Bodybuilding",
-      "Content Creation",
+      {
+        label: "Fingerstyle Guitar",
+        href: "https://www.instagram.com/p/DP9-PySEhBk/",
+      },
+      {
+        label: "Bodybuilding",
+        href: "https://www.instagram.com/p/C8ASU3cPHwX/",
+      },
+      {
+        label: "Content Creation",
+        href: "https://www.instagram.com/p/DVT7VWOAdmi/",
+      },
+      {
+        label: "Mountain Biking",
+      },
     ],
   },
 ];
@@ -61,10 +87,21 @@ export function Skills() {
             <ul className="mt-8 space-y-4">
               {column.items.map((item) => (
                 <li
-                  key={item}
+                  key={item.label}
                   className="flex items-center justify-between gap-4 border-b border-border/80 pb-4 text-sm text-muted sm:text-base"
                 >
-                  <span>{item}</span>
+                  {item.href ? (
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hover:text-foreground"
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <span>{item.label}</span>
+                  )}
                   <span className="h-1.5 w-1.5 rounded-full bg-accent" />
                 </li>
               ))}
